@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box {
+            background-color: aqua;
+            height: 100px;
+            animation-duration: 5s;
+            animation-name: loading;
+            animation-iteration-count: infinite;
+            overflow: hidden;
+        } */
+        .box {
+            background-color: darkcyan;
+            animation-name: loading;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        p {
+            animation-name: loading;
+            animation-duration: 4s;
+            /* animation-timing-function: steps(10); */
+            white-space: nowrap;
+            font-size: 20px;
+            height: 70px;
+
+        }
+
+        @keyframes loading {
+
+            /* from {
+                width: 0;
+                color: black;
+            }
+
+            to {
+                width: 100%;
+                color: blue;
+            } */
+            0% {
+                width: 50px;
+                color: brown;
+            }
+
+            25% {
+                width: 100px;
+                color: blue;
+            }
+
+            50% {
+                width: 400px;
+                color: red;
+            }
+
+            100% {
+                width: 100%;
+                color: black;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Welcome page</p>
+    </div>
+</body>
+
+</html>

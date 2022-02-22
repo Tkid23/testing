@@ -1,0 +1,72 @@
+@font-face {
+    font-family: titleFont;
+    src: url('../font/Saira_Condensed/SairaCondensed-Black.ttf');
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url('../font/Supermercado_One/SupermercadoOne-Regular.ttf')
+}
+
+body {
+    font-family: bodyFont;
+}
+
+h1 {
+    font-family: titleFont;
+}
+
+/* carousel */
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* about me */
+.title {
+    text-align: center;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    height: 4px;
+    width: 40px;
+    background: linear-gradient(to right, red, black);
+    display: inline-block;
+    margin-bottom: 10px;
+
+
+}
+
+
+.about-img {
+    height: 400px;
+
+}
+
+.site-color {
+    color: gray;
+}
+
+.sub-title {
+    font-family: titleFont;
+    font-weight: 900;
+}
+
+/* project */
+.project .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.project .card img {
+    transition: all 0.3s ease-in-out;
+}
+
+.project .card img:hover {
+    box-shadow: 2px 2px 5px red;
+    padding-left: 4px;
+}
